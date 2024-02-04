@@ -43,8 +43,7 @@ Login: Agreement: move to sign up
 
 Back end 
 Relational Database Design v1: 
-Lucid:
-https://lucid.app/lucidchart/d8e95557-1bcc-42f3-8a5c-0fa0db5e7284/edit?viewport_loc=-10%2C-10%2C1707%2C743%2C0_0&invitationId=inv_402a8b1d-5b92-4485-93af-fa7b2696ac5e
+Lucid: [Database structure](https://lucid.app/lucidchart/d8e95557-1bcc-42f3-8a5c-0fa0db5e7284/edit?viewport_loc=-10%2C-10%2C1707%2C743%2C0_0&invitationId=inv_402a8b1d-5b92-4485-93af-fa7b2696ac5e)
 
 
 Use Spring Boot for backend. This tutorial has good instruction on spring boot, react native, and Gradle even though we use maven.
@@ -57,8 +56,7 @@ Setup:
 
 
 Front end
-Figma:
-https://www.figma.com/file/dyoxc4TqS17PLLcabXsxVG/Untitled?type=design&node-id=2%3A793&mode=design&t=UMqmd7dZ8keQ2GXt-1
+Figma: [Design](https://www.figma.com/file/dyoxc4TqS17PLLcabXsxVG/Untitled?type=design&node-id=2%3A793&mode=design&t=UMqmd7dZ8keQ2GXt-1)
 
 ### Mobile App Development
 
