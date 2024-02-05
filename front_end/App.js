@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import Home from './components/Screens/Home';
+
 
 export default function App() {
   return (
-    <View className="flex-1 justify-center items-center bg-blue-200">
-      <Text className="text-xl font-semibold text-red-500">Welcome to NativeWind</Text>
+    <View className="flex-1 justify-center items-center text-white">
+      <Text className="text-white">hello</Text>
     </View>
   );
 }
