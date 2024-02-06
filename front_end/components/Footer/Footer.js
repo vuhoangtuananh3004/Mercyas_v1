@@ -12,7 +12,7 @@ export default function Footer() {
     <View className="absolute bottom-0 w-full h-[76px] border-t-2 border">
       <View className="flex flex-row justify-around items-center w-full h-full">
         {menu.map((value, index) => (
-          <View>
+          <View key={index}>
             <Image source={value.icon} style={{ width: 32, height: 32 }} />
             <Text>{value.title}</Text>
           </View>
