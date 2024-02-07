@@ -3,6 +3,7 @@ import { View, Text, Image, TextInput, Button } from "react-native";
 import SloganAndImageComp from "./SloganAndLogo";
 import EmailLogin from "./EmailLogin";
 import PhoneNumsVerification from "./PhoneNumsVerification";
+import RegistrationComp from "./RegistrationComp";
 
 export default function Login() {
     return (
@@ -10,7 +11,7 @@ export default function Login() {
             <View classname="flex flex-col">
                 <SloganAndImageComp />
                 {/* <EmailLogin /> */}
-                <PhoneNumsVerification />
+                <RegistrationComp />
             </View>
         </View>
     );
