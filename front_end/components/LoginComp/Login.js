@@ -1,18 +1,21 @@
 import React from "react";
-import { View, Text, Image, TextInput, Button } from "react-native";
-import SloganAndImageComp from "./SloganAndLogo";
+import { View } from "react-native";
+import SloganAndLogo from "./SloganAndLogo";
 import EmailLogin from "./EmailLogin";
 import PhoneNumsVerification from "./PhoneNumsVerification";
 import RegistrationComp from "./RegistrationComp";
 
 export default function Login() {
-    return (
-        <View classname="flex-1">
-            <View classname="flex flex-col">
-                <SloganAndImageComp />
-                {/* <EmailLogin /> */}
-                <RegistrationComp />
-            </View>
-        </View>
-    );
+  // <View classname="flex flex-col">
+  // <SloganAndImageComp />
+  // {/* <EmailLogin /> */}
+  // <RegistrationComp />
+  // </View>
+  //   <EmailLogin />
+  return (
+    <View className="flex-1 justify-center items-center">
+      <SloganAndLogo/>
+      <RegistrationComp/>
+    </View>
+  );
 }
