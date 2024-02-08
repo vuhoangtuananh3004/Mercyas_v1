@@ -10,7 +10,7 @@ export default function App() {
   // <Footer />
   return (
     <View className="flex-1">
-      <ScanReceipt/>
+      <Login/>
     </View>
   );
 }
