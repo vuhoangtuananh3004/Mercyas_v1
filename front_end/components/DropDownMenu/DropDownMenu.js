@@ -51,6 +51,7 @@ export default function DropDownMenu() {
             style={{ ...pickerSelectStyles }} // Optionally customize the styles
             placeholder={{ label: "Select Store" }}
           />
+          
           <AddStoreReceiptItems />
         </View>
       )}
