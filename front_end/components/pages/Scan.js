@@ -8,7 +8,7 @@ const Scan = () => {
     const [isDate, setDate] = useState(false);
     const [isTotal, setTotal] = useState(false);
     return (
-        <SafeAreaView className="flex items-center">
+        <SafeAreaView className="flex-1 items-center">
             <SwitchButton />
 
             <View className="px-2 mt-4">
