@@ -18,7 +18,7 @@ const Scan = () => {
                 </Text>
             </View>
 
-            <View className=" mt-4 w-4/5 h-4/6 border border-sky-500">
+            <View className=" mt-4 w-4/5 h-4/6 ">
                 <MyCamera />
             </View>
             <View className="flex flex-row w-full justify-evenly mt-4">
