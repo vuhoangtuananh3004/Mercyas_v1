@@ -19,11 +19,9 @@ const MyCamera = () => {
       const data = await camera.takePictureAsync()
       setImage(data.uri);
       setShowCamera(false);
-      // console.log("take picture");
     }
   }
   const retakePicture = () => {
-    // console.log(image);
     setImage(null);
     setShowCamera(true);
   }
@@ -31,7 +29,6 @@ const MyCamera = () => {
   if (hasCameraPermission === false) {
     return <Text>No access to camera</Text>;
   }
-
 
   if (showCamera) {
     return (
@@ -44,12 +41,10 @@ const MyCamera = () => {
             ratio={'1:2'} />
         </View>
 
-        {/* <TouchableOpacity title="Take Picture" onPress={() => takePicture()} /> */}
-
         <TouchableOpacity className="bg-gray-300 my-2 border border-sky-500 rounded-xl" onPress={() => takePicture()}>
           <Text className="p-1" >Take Picture</Text>
         </TouchableOpacity>
-        {/* {image && <Image className="flex-1" source={{ uri: image }} />} */}
+        
       </View>
     )
   } else {
