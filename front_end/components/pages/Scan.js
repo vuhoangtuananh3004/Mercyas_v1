@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { View, Text, SafeAreaView } from 'react-native'
 import SwitchButton from '../ScanReceipt/SwitchButton'
 import Checkbox from 'expo-checkbox';
+import MyCamera from '../Camera/MyCamera';
 
 const Scan = () => {
     const [isStore, setStore] = useState(false);
@@ -17,8 +18,8 @@ const Scan = () => {
                 </Text>
             </View>
 
-            <View className="px-2 mt-4 w-4/5 h-4/6 border border-sky-500">
-                <Text className>This is the frame</Text>
+            <View className=" mt-4 w-4/5 h-4/6 ">
+                <MyCamera />
             </View>
             <View className="flex flex-row w-full justify-evenly mt-4">
                 <View className="flex flex-row gap-2">
