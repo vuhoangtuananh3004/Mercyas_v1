@@ -12,7 +12,7 @@ export default function Login() {
       content = <EmailLogin screen={screen} setScreen={setScreen}/>
       break;
     case 'RegistrationComp':
-      content = <RegistrationComp/>
+      content = <RegistrationComp screen={screen} setScreen={setScreen}/>
       break;
   
     default:
