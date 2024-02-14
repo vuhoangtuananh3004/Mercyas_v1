@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, SafeAreaView } from 'react-native'
-import SwitchButton from '../ScanReceipt/SwitchButton'
+import SwitchButton from '../components/ScanReceipt/SwitchButton'
 import Checkbox from 'expo-checkbox';
 
 const Scan = () => {
