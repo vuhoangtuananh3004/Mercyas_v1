@@ -13,7 +13,7 @@ export default function SloganAndLogo() {
           source={require("../../assets/login/logo_1.png")}
           fill
         />
-        <Text className='' >Give me your money</Text>
+        <Text className='text-center text-yellow-800 font-extrabold tracking-widest' >Snap, Track, Thrive Your Finances Simplified</Text>
       </View>
     </View>
   );
