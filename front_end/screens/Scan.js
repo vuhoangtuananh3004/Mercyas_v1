@@ -10,9 +10,6 @@ const Scan = () => {
     const [isTotal, setTotal] = useState(false);
     const [isManual, setManual] = useState(false);
 
-    useEffect(() => {
-        console.log("isMnaual: ", isManual);
-    }, [isManual])
 
     onWitchClick = () => {
         setManual(!isManual)
