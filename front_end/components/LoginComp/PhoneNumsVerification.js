@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, Image, TextInput, Button, TouchableOpacity } from "react-native";
 
-export default function PhoneNumsVerification() {
+export default function PhoneNumsVerification({ screen, setScreen }) {
     const arrayList = [1, 2, 3, 4, 5, 6];
+    const [phoneNumber, setPhoneNumber] = useState();
+    //Curry Function
+    const handlePhoneNums = (index) => (value) => {
+        // Access both value and index here
+        console.log("Hello");
+        console.log("Value:", value, "Index:", index);
+        // Perform necessary actions with value and index
+    };
+
+
     return (
         <View classname="flex -space-y-20 justify-center">
             <View className="flex-row justify-center gap-5 mt-5">
                 {arrayList.map(
-                    (value, index) => (
-                        <TextInput key={index} placeholder="-" className="border-2 border-solid border-black text-center h-[60px] w-[50px]"></TextInput>
+                    (_, index) => (
+                        <TextInput key={index} keyboardType="numeric" maxLength={1} placeholder="-" className="border-2 border-solid border-black text-center h-[60px] w-[50px]" onChangeText={handlePhoneNums(index)}></TextInput>
                     ))}
             </View>
             <View className="flex-row justify-center gap-1 mt-5">

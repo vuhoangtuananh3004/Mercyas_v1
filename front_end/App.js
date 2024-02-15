@@ -15,7 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen
           name="Login"
-          component={ScanReceipt}
+          component={Login}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { View, Text, SafeAreaView } from 'react-native'
 import SwitchButton from '../components/ScanReceipt/SwitchButton'
 import Checkbox from 'expo-checkbox';
-import MyCamera from '../Camera/MyCamera';
+import MyCamera from '../components/Camera/MyCamera';
 
 const Scan = () => {
     const [isStore, setStore] = useState(false);
