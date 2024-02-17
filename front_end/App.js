@@ -1,24 +1,15 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Scan from "./screens/Scan";
-import Login from "./screens/Login";
-import Manually from "./components/ScanReceipt/Manually"
-
-import RegistrationComp from "./components/LoginComp/RegistrationComp";
-import ScanReceipt from "./screens/ScanReceipt";
-const Stack = createNativeStackNavigator();
+import React from "react";
+import { View, Text } from "react-native";
+import Manually from "./components/ScanReceipt/Manually";
+import ScanReceipt from "./components/ScanReceipt/ScanReceipt";
+import Footer from "./components/Footer/Footer";
+import Login from "./components/LoginComp/Login"
+import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Login"
-          component={ScanReceipt}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View className="flex-1">
+      <Home/>
+    </View>
   );
 }

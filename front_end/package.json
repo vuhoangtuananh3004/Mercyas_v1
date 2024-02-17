@@ -20,7 +20,10 @@
     "react": "18.2.0",
     "react-native": "0.73.4",
     "react-native-calendars": "^1.1303.0",
+    "react-native-gifted-charts": "^1.4.7",
+    "react-native-linear-gradient": "^2.8.3",
     "react-native-picker-select": "^9.0.1",
+    "react-native-svg": "^14.1.0",
     "react-native-table-component": "^1.2.2"
   },
   "devDependencies": {

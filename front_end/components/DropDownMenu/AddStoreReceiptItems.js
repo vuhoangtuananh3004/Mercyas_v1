@@ -29,7 +29,7 @@ export default function AddStoreReceiptItems() {
       </View>
       <ScrollView className='h-[215px]' >
         {Array.from({ length: 20 }).map((_, index) => (
-          <View className={`flex flex-row h-[36px] items-center w-full ${(index % 2 == 0) ? 'bg-red-200/40' : 'bg-blue-200/40'}`}>
+          <View key={index} className={`flex flex-row h-[36px] items-center w-full ${(index % 2 == 0) ? 'bg-red-200/40' : 'bg-blue-200/40'}`}>
             <View className="w-[60px] text-center border-r-2 border-gray-200">
               <Text className="text-center">1</Text>
             </View>
