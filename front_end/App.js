@@ -7,8 +7,6 @@ import Login from "./components/LoginComp/Login"
 import Home from "./components/pages/Home";
 
 export default function App() {
-  // <ScanReceipt />
-  // <Footer />
   return (
     <View className="flex-1">
       <Home/>

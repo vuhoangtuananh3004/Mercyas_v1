@@ -1,8 +1,8 @@
 import { SafeAreaView, Text, View } from 'react-native'
 import React from 'react'
-import PieChart from '../graphs/PieChart'
-import LineChart from '../graphs/LineChart'
-import HistogramChart from '../graphs/HistogramChart'
+import PieChart from '../components/graphs/PieChart'
+import LineChart from '../components/graphs/LineChart'
+import HistogramChart from '../components/graphs/HistogramChart'
 
 
 data = {
