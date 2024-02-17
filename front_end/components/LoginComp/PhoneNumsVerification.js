@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, Image, TextInput, Button, TouchableOpacity } from "react-native";
 
 export default function PhoneNumsVerification() {
     const arrayList = [1, 2, 3, 4, 5, 6];
+
     return (
         <View classname="flex -space-y-20 justify-center">
             <View className="flex-row justify-center gap-5 mt-5">
