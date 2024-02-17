@@ -8,8 +8,14 @@ import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <View className="flex-1">
-      <Home/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
