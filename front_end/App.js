@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 import Manually from "./components/ScanReceipt/Manually";
-import ScanReceipt from "./components/ScanReceipt/ScanReceipt";
 import Footer from "./components/Footer/Footer";
-import Login from "./components/LoginComp/Login"
-import Home from "./components/pages/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Login from "./screens/Login";
 
+const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
