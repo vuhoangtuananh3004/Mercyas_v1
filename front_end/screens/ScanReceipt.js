@@ -6,10 +6,9 @@ import Manually from "../components/ScanReceipt/Manually";
 import Footer from "../components/Footer/Footer";
 export default function ScanReceipt() {
   return (
-    <SafeAreaView className="flex-1 w-full items-center">
+    <SafeAreaView className="flex w-full items-center">
       <SwitchButton/>
       <Manually/>
-      <Footer/>
     </SafeAreaView>
   );
 }

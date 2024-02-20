@@ -18,7 +18,7 @@ export default function EmailLogin({ screen, setScreen }) {
   };
 
   const handleEmail = (text) => {
-    (text == 'mercyas') ? setLegitEmail(false) : setLegitEmail(true)
+    (text == 'Mercyas@gmail.com') ? setLegitEmail(false) : setLegitEmail(true)
     setEmail(text);
   };
 
