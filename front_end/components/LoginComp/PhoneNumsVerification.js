@@ -54,7 +54,7 @@ export default function PhoneNumsVerification({
             key={index}
             keyboardType="numeric"
             maxLength={1}
-            placeholder="-"
+            placeholder="--"
             className="border-2 border-solid border-black text-center h-[50px] w-[40px]"
             onChangeText={(input) => handlePhoneNums(input, index)}
           />
