@@ -7,7 +7,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Login from "./screens/Login";
 import Home from "./screens/Home";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import ScanReceipt from "./screens/ScanReceipt";
 import { Ionicons } from "@expo/vector-icons";
 import TabNavigation from "./navigation/TabNavigation";
 const Stack = createStackNavigator();

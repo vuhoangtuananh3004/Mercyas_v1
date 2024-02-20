@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import Home from "../screens/Home";
-import ScanReceipt from "../screens/ScanReceipt";
+import Scan from "../screens/Scan";
 const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
   const tabStyle = {
@@ -53,10 +53,10 @@ export default function TabNavigation() {
           },
         })}
       >
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="ScanReceipt" component={ScanReceipt} />
-        <Tab.Screen name="Calendar" component={ScanReceipt} />
-        <Tab.Screen name="Setting" component={ScanReceipt} />
+        <Tab.Screen name="Home" component={Home}   options={{ headerShown: false }}/>
+        <Tab.Screen name="ScanReceipt" component={Scan}   options={{ headerShown: false }}/>
+        <Tab.Screen name="Calendar" component={Scan}   options={{ headerShown: false }}/>
+        <Tab.Screen name="Setting" component={Scan}   options={{ headerShown: false }}/>
       </Tab.Navigator>
   );
 }

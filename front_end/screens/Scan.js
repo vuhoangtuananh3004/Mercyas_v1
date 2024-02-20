@@ -3,6 +3,7 @@ import { View, Text, SafeAreaView } from 'react-native'
 import SwitchButton from '../components/ScanReceipt/SwitchButton'
 import Checkbox from 'expo-checkbox';
 import MyCamera from '../components/Camera/MyCamera';
+import Manually from '../components/ScanReceipt/Manually';
 
 const Scan = () => {
     const [isStore, setStore] = useState(false);
