@@ -25,7 +25,8 @@
     "react-native-linear-gradient": "^2.8.3",
     "react-native-picker-select": "^9.0.1",
     "react-native-svg": "^14.1.0",
-    "react-native-table-component": "^1.2.2"
+    "react-native-table-component": "^1.2.2",
+    "react-native-gesture-handler": "~2.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
