@@ -4,6 +4,7 @@ import SwitchButton from '../components/ScanReceipt/SwitchButton'
 import Checkbox from 'expo-checkbox';
 import MyCamera from '../components/Camera/MyCamera';
 import Manually from '../components/ScanReceipt/Manually';
+
 const Scan = () => {
     const [isStore, setStore] = useState(false);
     const [isDate, setDate] = useState(false);

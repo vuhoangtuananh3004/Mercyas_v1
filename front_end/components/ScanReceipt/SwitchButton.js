@@ -15,7 +15,7 @@ function SwitchButton(props) {
         <Text className="text-xl font-bold">Scan</Text>
         <Text className="text-xl font-bold">Manual</Text>
       </View>
-      <TouchableOpacity className={`absolute transition duration-400 delay-200 ${isSwitch ? '' : 'translate-x-[130px]'}  bg-green h-full w-[130px] bg-green-400/40 rounded-[24px]`} onPress={switchButton}/>
+      <TouchableOpacity className={`absolute transition duration-400 delay-200 ${!isSwitch ? '' : 'translate-x-[130px]'}  bg-green h-full w-[130px] bg-green-400/40 rounded-[24px]`} onPress={switchButton}/>
     </View>
   );
 }

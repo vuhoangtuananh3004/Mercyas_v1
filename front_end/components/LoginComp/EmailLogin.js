@@ -18,32 +18,34 @@ export default function EmailLogin({ screen, setScreen }) {
   };
 
   const handleEmail = (text) => {
-    (text == 'mercyas') ? setLegitEmail(false) : setLegitEmail(true)
+    (text == 'Mercyas@gmail.com') ? setLegitEmail(false) : setLegitEmail(true)
     setEmail(text);
   };
 
   const loginBtn = () => {
-    setScreen('RegistrationComp')
+    if (checked && legitEmail) {
+      setScreen('PhoneNumsVerification')
+    } else {
+      setScreen('RegistrationComp');
+    }
   }
   const message = <Text className='text-red-600 text-[8px]'>Invalid Email</Text>;
   return (
     <View classname="flex-1 justify-center items-center">
       <View className="flex">
-      {legitEmail ? '' : message}
+        {legitEmail ? '' : message}
         <View className="flex-row gap-2">
           <TextInput
-            className={`border-2 border-solid ${
-              legitEmail ? "border-black" : "border-red-900"
-            }  text-center h-[40px] w-[240px] `}
+            className={`border-2 border-solid ${legitEmail ? "border-black" : "border-red-900"
+              }  text-center h-[40px] w-[240px] `}
             placeholder="Your Email"
             onChangeText={handleEmail}
           />
 
           <TouchableOpacity
             disabled={!checked}
-            className={`flex h-[40px] w-[50px] justify-center items-center border-2 rounded-l-lg rounded-r-lg ${
-              checked ? "bg-yellow-500" : "bg-gray-200 opacity-10"
-            } `}
+            className={`flex h-[40px] w-[50px] justify-center items-center border-2 rounded-l-lg rounded-r-lg ${checked ? "bg-yellow-500" : "bg-gray-200 opacity-10"
+              } `}
             onPress={loginBtn}
           >
             <Image

@@ -1,15 +1,31 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import Manually from "./components/ScanReceipt/Manually";
-import ScanReceipt from "./components/ScanReceipt/ScanReceipt";
 import Footer from "./components/Footer/Footer";
-import Login from "./components/LoginComp/Login"
-import Home from "./components/pages/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Login from "./screens/Login";
+import Home from "./screens/Home";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from "@expo/vector-icons";
+import TabNavigation from "./navigation/TabNavigation";
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View className="flex-1">
-      <Home/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="TabNavigation"
+          component={TabNavigation}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
