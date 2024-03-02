@@ -1,9 +1,13 @@
 package com.mercyas.expensetracker.model;
 
 import jakarta.persistence.*;
+import jakarta.transaction.Transactional;
 
-@Entity
-@Table(name = "USER_TABLE")
+import java.util.Set;
+
+@Entity(name = "USERS")
+@Table(name = "USERS")
+//@Transactional
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +22,13 @@ public class User {
     @Column(name = "AGREEMENT")
     private boolean agreement;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
+    private Set<Expense> expenses;
+
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
+//    private Set<NetIncome> netIncomes;
     public User() {
     }
 
@@ -60,6 +71,7 @@ public class User {
     public void setAgreement(boolean agreement) {
         this.agreement = agreement;
     }
+
 
     @Override
     public String toString() {
