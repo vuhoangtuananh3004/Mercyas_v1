@@ -29,10 +29,6 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-<<<<<<< HEAD
     @GetMapping("/{userId}/expenses")
     public List<Expense> getAllExpensesByUserId(@PathVariable Long userId){return Optional.of(userService.getAllExpenseByUserId(userId)).orElse(null);}
-=======
-
->>>>>>> f64552268e96e644f54774a6f55b926dd6d27849
 }
