@@ -1,9 +1,6 @@
 package com.mercyas.expensetracker.DAOClass;
 
 import com.mercyas.expensetracker.model.Expense;
-import com.mercyas.expensetracker.model.NetIncome;
-import com.mercyas.expensetracker.model.User;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
