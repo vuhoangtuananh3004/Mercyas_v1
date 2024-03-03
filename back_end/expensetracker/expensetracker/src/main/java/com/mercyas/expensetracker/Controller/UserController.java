@@ -16,15 +16,23 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/{userId}")
-    public User getUser(@PathVariable Long userId){
-        return Optional.of(userService.getUserById(userId)).orElse(null);
+    public String getUser(){
+        String status = "success";
+        return status;
     }
+//    public User getUser(@PathVariable Long userId){
+//        return Optional.of(userService.getUserById(userId)).orElse(null);
+//    }
 
     @PostMapping
     public User saveUser(@RequestBody User user){
         return userService.saveUser(user);
     }
 
+<<<<<<< HEAD
     @GetMapping("/{userId}/expenses")
     public List<Expense> getAllExpensesByUserId(@PathVariable Long userId){return Optional.of(userService.getAllExpenseByUserId(userId)).orElse(null);}
+=======
+
+>>>>>>> f64552268e96e644f54774a6f55b926dd6d27849
 }
