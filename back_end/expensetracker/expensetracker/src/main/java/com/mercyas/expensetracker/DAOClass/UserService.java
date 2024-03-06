@@ -1,6 +1,8 @@
 package com.mercyas.expensetracker.DAOClass;
 
 import com.mercyas.expensetracker.model.Expense;
+import com.mercyas.expensetracker.model.NetIncome;
+import com.mercyas.expensetracker.model.Saving;
 import com.mercyas.expensetracker.model.User;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +33,7 @@ public class UserService{
 
     public List<Expense> getAllExpenseByUserId(@NotNull Long id){return userDAO.findExpensesByUserId(id);}
 
+    public List<NetIncome> getAllNetIncomesByUserId(@NotNull Long id){return userDAO.findNetIncomesByUserId(id);}
 
+    public List<Saving> getAllSavingsByUserId(@NotNull Long id){return userDAO.findSavingsByUserId(id);}
 }

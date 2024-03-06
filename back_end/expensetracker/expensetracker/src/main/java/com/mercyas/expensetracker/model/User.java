@@ -1,7 +1,6 @@
 package com.mercyas.expensetracker.model;
 
 import jakarta.persistence.*;
-import jakarta.transaction.Transactional;
 
 import java.util.Set;
 
@@ -26,9 +25,13 @@ public class User {
     @JoinColumn(name = "USERID", referencedColumnName = "USERID")
     private Set<Expense> expenses;
 
-//    @OneToMany(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
-//    private Set<NetIncome> netIncomes;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
+    private Set<NetIncome> netIncomes;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
+    private Set<Saving> savings;
     public User() {
     }
 
