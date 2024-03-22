@@ -1,4 +1,4 @@
-package com.mercyas.expensetracker.DAOClass;
+package com.mercyas.expensetracker.DAOInterface;
 
 import com.mercyas.expensetracker.model.Expense;
 import com.mercyas.expensetracker.model.User;

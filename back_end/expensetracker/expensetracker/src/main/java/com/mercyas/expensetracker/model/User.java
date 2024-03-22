@@ -2,12 +2,13 @@ package com.mercyas.expensetracker.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.Set;
 
 @Entity(name = "USERS")
 @Table(name = "USERS")
 //@Transactional
-public class User {
+public class User  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USERID")
@@ -32,6 +33,10 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "USERID", referencedColumnName = "USERID")
     private Set<Saving> savings;
+
+    @OneToMany
+    @JoinColumn(name = "USERID", referencedColumnName = "USERID")
+    private List<Receipt> receipts;
     public User() {
     }
 
@@ -75,6 +80,37 @@ public class User {
         this.agreement = agreement;
     }
 
+    public Set<Expense> getExpenses() {
+        return expenses;
+    }
+
+    public void setExpenses(Set<Expense> expenses) {
+        this.expenses = expenses;
+    }
+
+    public Set<NetIncome> getNetIncomes() {
+        return netIncomes;
+    }
+
+    public void setNetIncomes(Set<NetIncome> netIncomes) {
+        this.netIncomes = netIncomes;
+    }
+
+    public Set<Saving> getSavings() {
+        return savings;
+    }
+
+    public void setSavings(Set<Saving> savings) {
+        this.savings = savings;
+    }
+
+    public List<Receipt> getReceipts() {
+        return receipts;
+    }
+
+    public void setReceipts(List<Receipt> receipts) {
+        this.receipts = receipts;
+    }
 
     @Override
     public String toString() {

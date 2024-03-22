@@ -1,4 +1,4 @@
-package com.mercyas.expensetracker.DAOClass;// Java Program to Illustrate Creation Of
+package com.mercyas.expensetracker.Service;// Java Program to Illustrate Creation Of
 // Service implementation class
 
 

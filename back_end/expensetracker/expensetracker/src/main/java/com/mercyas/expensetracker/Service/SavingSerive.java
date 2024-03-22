@@ -1,5 +1,6 @@
-package com.mercyas.expensetracker.DAOClass;
+package com.mercyas.expensetracker.Service;
 
+import com.mercyas.expensetracker.DAOInterface.SavingDAO;
 import com.mercyas.expensetracker.model.Saving;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

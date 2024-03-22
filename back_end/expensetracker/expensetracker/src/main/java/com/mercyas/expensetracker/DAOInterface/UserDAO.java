@@ -1,4 +1,4 @@
-package com.mercyas.expensetracker.DAOClass;
+package com.mercyas.expensetracker.DAOInterface;
 
 import com.mercyas.expensetracker.model.Expense;
 import com.mercyas.expensetracker.model.NetIncome;
@@ -10,10 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface UserDAO extends JpaRepository<User, Long>{
-    // column name is variable name
-    // table name is Entity name
-    // this is jpql query style
+public interface UserDAO extends JpaRepository<User, Long> {
     @Query("SELECT e FROM EXPENSES e WHERE e.userId = :id")
     List<Expense> findExpensesByUserId(@Param("id") Long id);
 
@@ -22,4 +19,5 @@ public interface UserDAO extends JpaRepository<User, Long>{
 
     @Query("SELECT s FROM SAVINGS s WHERE s.userId = :id")
     List<Saving> findSavingsByUserId(@Param("id") Long id);
+
 }

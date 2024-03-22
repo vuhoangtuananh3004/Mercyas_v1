@@ -1,10 +1,10 @@
-package com.mercyas.expensetracker.DAOClass;
+package com.mercyas.expensetracker.Service;
 
+import com.mercyas.expensetracker.DAOInterface.ExpenseDAO;
 import com.mercyas.expensetracker.model.Expense;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service

@@ -1,6 +1,6 @@
 package com.mercyas.expensetracker.Controller;
 
-import com.mercyas.expensetracker.DAOClass.ExpensesService;
+import com.mercyas.expensetracker.Service.ExpensesService;
 import com.mercyas.expensetracker.model.Expense;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

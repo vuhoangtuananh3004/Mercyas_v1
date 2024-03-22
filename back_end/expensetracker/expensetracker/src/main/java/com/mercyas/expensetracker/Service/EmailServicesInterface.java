@@ -1,4 +1,4 @@
-package com.mercyas.expensetracker.DAOClass;
+package com.mercyas.expensetracker.Service;
 
 
 import com.mercyas.expensetracker.model.EmailDetails;

@@ -1,6 +1,7 @@
 package com.mercyas.expensetracker.Controller;
 
-import com.mercyas.expensetracker.DAOClass.UserService;
+
+import com.mercyas.expensetracker.Service.UserService;
 import com.mercyas.expensetracker.model.Expense;
 import com.mercyas.expensetracker.model.NetIncome;
 import com.mercyas.expensetracker.model.Saving;
