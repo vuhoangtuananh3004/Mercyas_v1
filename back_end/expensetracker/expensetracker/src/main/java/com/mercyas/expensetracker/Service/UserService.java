@@ -3,6 +3,7 @@ package com.mercyas.expensetracker.Service;
 import com.mercyas.expensetracker.DAOInterface.UserDAO;
 import com.mercyas.expensetracker.model.*;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import java.util.List;
 public class UserService {
     @Autowired
     private UserDAO userDAO;
-
+    @PersistenceContext
     private EntityManager entityManager;
 
     public List<User> findAll() {

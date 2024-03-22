@@ -77,6 +77,7 @@ public class User  {
     }
 
     public void setAgreement(boolean agreement) {
+        //TODO: Back end is always true false. Thus, front end must have a way to specify true false
         this.agreement = agreement;
     }
 
